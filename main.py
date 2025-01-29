@@ -50,7 +50,6 @@ print("Track different data about your selected agent!")
 print()
 
 agents = []
-releaseDates = []
 
 while True:
     user_input = input("Enter an agents name: ").strip()
@@ -59,11 +58,14 @@ while True:
     agent_data = fetch_agent_data(user_input)["data"]
 
     for agent in agent_data:
-        if user_input == agent["displayName"]:
+        if user_input == agent["displayName"] and agent["isPlayableCharacter"]:
             print(agent["displayName"])
             agent_obj = create_agent(agent)
             agent_obj.display_info()
             agents.append(agent_obj)
+            break
+    else:
+        print(user_input,"is not an agent, please try another agent.")
         
     print()
     Continue = input("Would you like to select another agent (y/n): ").strip()
@@ -74,9 +76,9 @@ while True:
 
 
 print()
-print("Here's the agenst you have asked for during this session:")
+print("Here's the agents you have asked for during this session:")
 for agent in agents:
-     print(f"Agents: {agents}")
+     print(f"Agents: ", agents)
     
 
     
