@@ -15,9 +15,9 @@ This app uses the Valorant API to gather information and data of different Agent
 
 ## Authors
 
-[SyphonAce | Github] (https://github.com/SyphonAce)
+[SyphonAce | Github](https://github.com/SyphonAce)
 
 
 ## Acknowledgments
 
-[ValorantAPI] (https://dash.valorant-api.com)
+[ValorantAPI](https://dash.valorant-api.com)
