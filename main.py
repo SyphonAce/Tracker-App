@@ -78,7 +78,7 @@ while True:
 print()
 print("Here's the agents you have asked for during this session:")
 for agent in agents:
-     print(f"Agents: ", agents)
+     print(f"Agents: ",agent.displayName)
     
 
     
